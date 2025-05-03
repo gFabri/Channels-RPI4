@@ -29,11 +29,13 @@ body {
   left: 0;
   right: 0;
   z-index: 1000;
-  height: 60px;
+  height: 72px;
   display: flex;
   align-items: center;
-  padding: 0 20px;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+  justify-content: space-between;
+  padding: 0 32px;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.7);
+  border-bottom: 2px solid var(--primary-color);
 }
 
 .headerButton {
@@ -193,8 +195,8 @@ body {
 /* Mobile Responsive */
 @media (max-width: 768px) {
   .skinHeader {
-    height: 50px;
-    padding: 0 10px;
+    height: 56px;
+    padding: 0 8px;
   }
   
   .navMenuOption {
@@ -210,7 +212,7 @@ body {
   }
   
   .detailPagePrimaryContainer {
-    margin-top: 60px;
+    margin-top: 64px;
   }
 }
 
@@ -230,8 +232,8 @@ body {
 }
 
 /* Fix for header content */
-.mainDrawer {
-  margin-top: 60px;
+.mainDrawer, .mainContent, .pageContainer {
+  margin-top: 80px !important;
 }
 
 /* Fix for navigation menu */
@@ -246,15 +248,63 @@ body {
 }
 
 /* Fix for header tabs */
-.emby-tab-button {
-  transition: all var(--transition-speed) ease;
+.emby-tab-button, .headerTabs .emby-tab-button {
+  background: none;
+  border: none;
+  color: var(--text-primary);
+  font-weight: 500;
+  font-size: 1.1rem;
+  margin: 0 12px;
+  padding: 12px 28px 10px 28px;
+  border-radius: 12px 12px 0 0;
+  transition: background var(--transition-speed), color var(--transition-speed);
+  pointer-events: auto;
+  position: relative;
+  top: 12px;
 }
 
-.emby-tab-button:hover {
+.emby-tab-button:hover, .headerTabs .emby-tab-button:hover {
   color: var(--primary-color);
 }
 
-.emby-tab-button-active {
-  color: var(--primary-color);
-  font-weight: 600;
+.emby-tab-button-active, .headerTabs .emby-tab-button-active {
+  background: var(--primary-color);
+  color: #fff;
+  font-weight: 700;
+  box-shadow: 0 4px 12px rgba(255,77,0,0.15);
+  z-index: 2;
+}
+
+/* Centrar las pestañas en el header */
+.headerTabs, .emby-tabs, .emby-tabs-header {
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 72px;
+  pointer-events: none;
+}
+
+/* Mejorar contraste del header */
+.skinHeader {
+  border-bottom: 2px solid var(--primary-color);
+  box-shadow: 0 4px 24px rgba(0,0,0,0.7);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .headerTabs, .emby-tabs, .emby-tabs-header {
+    height: 56px;
+  }
+  .emby-tab-button, .headerTabs .emby-tab-button {
+    font-size: 1rem;
+    padding: 8px 12px 6px 12px;
+    top: 8px;
+  }
+  .mainDrawer, .mainContent, .pageContainer {
+    margin-top: 64px !important;
+  }
 } 
