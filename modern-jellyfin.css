@@ -1,0 +1,188 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+:root {
+  --primary-color: #FF4D00;
+  --primary-dark: #CC3D00;
+  --primary-light: #FF6B33;
+  --background-dark: #0A0A0A;
+  --background-light: #1A1A1A;
+  --text-primary: #FFFFFF;
+  --text-secondary: rgba(255, 255, 255, 0.7);
+  --border-radius: 8px;
+  --transition-speed: 0.3s;
+}
+
+/* Base Styles */
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: var(--background-dark);
+  color: var(--text-primary);
+  margin: 0;
+  padding: 0;
+}
+
+/* Header */
+.skinHeader {
+  background: linear-gradient(to bottom, var(--background-dark), rgba(10, 10, 10, 0.8));
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid rgba(255, 77, 0, 0.2);
+}
+
+.headerButton {
+  color: var(--text-primary);
+  transition: color var(--transition-speed);
+}
+
+.headerButton:hover {
+  color: var(--primary-color);
+}
+
+/* Navigation */
+.navMenuOption {
+  padding: 12px 20px;
+  transition: background-color var(--transition-speed);
+}
+
+.navMenuOption:hover {
+  background-color: rgba(255, 77, 0, 0.1);
+}
+
+.navMenuOption-selected {
+  background-color: var(--primary-color);
+  color: var(--text-primary);
+}
+
+/* Cards */
+.card {
+  background-color: var(--background-light);
+  border-radius: var(--border-radius);
+  transition: transform var(--transition-speed), box-shadow var(--transition-speed);
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+.cardText {
+  color: var(--text-primary);
+}
+
+.cardText-secondary {
+  color: var(--text-secondary);
+}
+
+/* Buttons */
+.emby-button {
+  background-color: var(--primary-color);
+  color: var(--text-primary);
+  border-radius: var(--border-radius);
+  padding: 8px 16px;
+  transition: background-color var(--transition-speed);
+}
+
+.emby-button:hover {
+  background-color: var(--primary-dark);
+}
+
+.button-flat {
+  background-color: transparent;
+  color: var(--text-primary);
+}
+
+.button-flat:hover {
+  background-color: rgba(255, 77, 0, 0.1);
+  color: var(--primary-color);
+}
+
+/* Progress Bars */
+.mdl-slider-background-lower {
+  background-color: var(--primary-color) !important;
+}
+
+.progressring-spiner {
+  border-color: var(--primary-color);
+}
+
+/* Input Fields */
+.emby-input, .emby-textarea {
+  background-color: var(--background-light);
+  border: 1px solid rgba(255, 77, 0, 0.2);
+  border-radius: var(--border-radius);
+  color: var(--text-primary);
+  padding: 8px 12px;
+}
+
+.emby-input:focus, .emby-textarea:focus {
+  border-color: var(--primary-color);
+  box-shadow: 0 0 0 2px rgba(255, 77, 0, 0.2);
+}
+
+/* Backdrop */
+.backdropImage {
+  filter: blur(4px) saturate(120%) contrast(110%) brightness(25%);
+  transition: filter var(--transition-speed);
+}
+
+.backgroundContainer.withBackdrop {
+  background: linear-gradient(to bottom, 
+    rgba(10, 10, 10, 0.9) 0%,
+    rgba(10, 10, 10, 0.7) 50%,
+    rgba(10, 10, 10, 0.9) 100%
+  );
+}
+
+/* Detail Page */
+.detailPagePrimaryContainer {
+  background-color: var(--background-light);
+  border-radius: var(--border-radius);
+  padding: 20px;
+}
+
+.detailPagePrimaryContent {
+  color: var(--text-primary);
+}
+
+/* Scrollbars */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--background-dark);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--primary-color);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--primary-dark);
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+  .navMenuOption {
+    padding: 10px 16px;
+  }
+  
+  .card {
+    margin: 8px;
+  }
+  
+  .emby-button {
+    padding: 6px 12px;
+  }
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.fade-in {
+  animation: fadeIn var(--transition-speed) ease-in;
+} 
