@@ -1,0 +1,207 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+:root {
+  --primary-color: #FF6B35;
+  --primary-dark: #D45A2C;
+  --primary-light: #FF8C5A;
+  --background-dark: #121212;
+  --background-light: #1E1E1E;
+  --text-primary: #FFFFFF;
+  --text-secondary: rgba(255, 255, 255, 0.7);
+  --text-tertiary: rgba(255, 255, 255, 0.5);
+  --border-color: rgba(255, 107, 53, 0.2);
+}
+
+/* Base Styles */
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: var(--background-dark);
+  color: var(--text-primary);
+}
+
+/* Navigation */
+.navMenuOption {
+  background: transparent;
+  transition: all 0.3s ease;
+}
+
+.navMenuOption:hover {
+  background: var(--primary-dark);
+  color: var(--text-primary);
+}
+
+.navMenuOption-selected {
+  background: var(--primary-color);
+  color: var(--text-primary);
+}
+
+/* Cards */
+.card {
+  background: var(--background-light);
+  border-radius: 8px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 4px 20px rgba(255, 107, 53, 0.2);
+}
+
+.cardText {
+  color: var(--text-primary);
+}
+
+.cardText-secondary {
+  color: var(--text-secondary);
+}
+
+/* Buttons */
+.emby-button {
+  background: var(--primary-color);
+  color: var(--text-primary);
+  border-radius: 6px;
+  transition: all 0.3s ease;
+}
+
+.emby-button:hover {
+  background: var(--primary-light);
+  transform: translateY(-2px);
+}
+
+.button-flat {
+  background: transparent;
+  color: var(--primary-color);
+}
+
+.button-flat:hover {
+  background: rgba(255, 107, 53, 0.1);
+}
+
+/* Progress Bars */
+.mdl-slider-background-lower {
+  background: var(--primary-color) !important;
+}
+
+.progressring-spiner {
+  border-color: var(--primary-color);
+}
+
+/* Inputs */
+.emby-input,
+.emby-textarea,
+.emby-select-withcolor {
+  background: var(--background-light);
+  border: 1px solid var(--border-color);
+  border-radius: 6px;
+  color: var(--text-primary);
+  transition: all 0.3s ease;
+}
+
+.emby-input:focus,
+.emby-textarea:focus,
+.emby-select-withcolor:focus {
+  border-color: var(--primary-color);
+  box-shadow: 0 0 0 2px rgba(255, 107, 53, 0.2);
+}
+
+/* Backdrop */
+.backdropImage {
+  filter: blur(4px) saturate(120%) contrast(110%) brightness(25%);
+  transition: filter 0.3s ease;
+}
+
+.backgroundContainer.withBackdrop {
+  background: linear-gradient(0deg, 
+    rgba(18, 18, 18, 1) 0%,
+    rgba(18, 18, 18, 0.95) 25%,
+    rgba(18, 18, 18, 0.85) 50%,
+    rgba(18, 18, 18, 0.7) 75%,
+    rgba(18, 18, 18, 0.5) 100%
+  );
+}
+
+/* Detail Page */
+.detailPagePrimaryContainer {
+  background: var(--background-light);
+  border-radius: 12px;
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.3);
+}
+
+.detailPagePrimaryContent {
+  color: var(--text-primary);
+}
+
+/* Scrollbars */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--background-dark);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--primary-color);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--primary-light);
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+  .card {
+    margin: 8px;
+  }
+  
+  .navMenuOption {
+    padding: 12px;
+  }
+  
+  .emby-button {
+    padding: 8px 16px;
+  }
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.fade-in {
+  animation: fadeIn 0.3s ease-in;
+}
+
+/* Loading Spinner */
+.mdl-spinner__layer-1,
+.mdl-spinner__layer-2,
+.mdl-spinner__layer-3,
+.mdl-spinner__layer-4 {
+  border-color: var(--primary-color) !important;
+}
+
+/* Notifications */
+.notification {
+  background: var(--background-light);
+  border-left: 4px solid var(--primary-color);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Focus States */
+:focus {
+  outline: 2px solid var(--primary-color);
+  outline-offset: 2px;
+}
+
+/* Accessibility */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+} 
