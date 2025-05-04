@@ -1,0 +1,29 @@
+#EXTM3U
+#EXTINF:-1 tvg-id="americaenvivo" tvg-name="América TV" group-title="Argentina",América TV
+http://fabriutils.cloud:8083/americaenvivo.m3u8
+#EXTINF:-1 tvg-id="americaenvivo2" tvg-name="América TV Alternativo 1" group-title="Argentina",América TV Alternativo 1
+http://nictv.xyz:8080/fhf5utybk6/XypVDRv8a6/165575
+#EXTINF:-1 tvg-id="americaenvivo3" tvg-name="América TV Alternativo 2" group-title="Argentina",América TV Alternativo 2
+http://nictv.xyz:8080/fhf5utybk6/XypVDRv8a6/165576
+#EXTINF:-1 tvg-id="canal4" tvg-name="Canal 4" group-title="Uruguay",Canal 4
+http://nictv.xyz:8080/fhf5utybk6/XypVDRv8a6/165673
+#EXTINF:-1 tvg-id="canal4hd" tvg-name="Canal 4 HD" group-title="Uruguay",Canal 4 HD
+http://nictv.xyz:8080/fhf5utybk6/XypVDRv8a6/165672
+#EXTINF:-1 tvg-id="canal10" tvg-name="Canal 10" group-title="Uruguay",Canal 10
+http://nictv.xyz:8080/fhf5utybk6/XypVDRv8a6/165682
+#EXTINF:-1 tvg-id="canal10hd" tvg-name="Canal 10 HD" group-title="Uruguay",Canal 10 HD
+http://nictv.xyz:8080/fhf5utybk6/XypVDRv8a6/165680
+#EXTINF:-1 tvg-id="canal12hd" tvg-name="Canal 12 HD" group-title="Uruguay",Canal 12 HD
+http://nictv.xyz:8080/fhf5utybk6/XypVDRv8a6/165685
+#EXTINF:-1 tvg-id="canal12" tvg-name="Canal 12" group-title="Uruguay",Canal 12
+http://nictv.xyz:8080/fhf5utybk6/XypVDRv8a6/165684
+#EXTINF:-1 tvg-id="vtv" tvg-name="VTV" group-title="Uruguay",VTV Uruguay
+http://nictv.xyz:8080/fhf5utybk6/XypVDRv8a6/165686
+#EXTINF:-1 tvg-id="vtvhd" tvg-name="VTV HD" group-title="Uruguay",VTV HD
+http://nictv.xyz:8080/fhf5utybk6/XypVDRv8a6/165690
+#EXTINF:-1 tvg-id="vtvplus" tvg-name="VTV Plus" group-title="Uruguay",VTV Plus
+http://nictv.xyz:8080/fhf5utybk6/XypVDRv8a6/165692
+#EXTINF:-1 tvg-id="vtvplushd" tvg-name="VTV Plus HD" group-title="Uruguay",VTV Plus HD
+http://nictv.xyz:8080/fhf5utybk6/XypVDRv8a6/165693
+#EXTINF:-1 tvg-id="vivotv" tvg-name="Vivo TV" group-title="Uruguay",Vivo TV
+http://nictv.xyz:8080/fhf5utybk6/XypVDRv8a6/378772
