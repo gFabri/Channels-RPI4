@@ -1,6 +1,6 @@
 #EXTM3U
 #EXTINF:-1 tvg-id="americaenvivo" tvg-name="América TV" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/0/0b/América_TV_logo_2022.svg" group-title="Argentina",América TV
-http://fabriutils.cloud:8083/hls/@americaenvivo/playlist.m3u8
+http://192.168.1.90:8083/hls/@americaenvivo/playlist.m3u8
 #EXTINF:-1 tvg-id="americaenvivo2" tvg-name="América TV Alternativo 1" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/0/0b/América_TV_logo_2022.svg" group-title="Argentina",América TV Alternativo 1
 http://nictv.xyz:8080/fhf5utybk6/XypVDRv8a6/165575
 #EXTINF:-1 tvg-id="americaenvivo3" tvg-name="América TV Alternativo 2" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/0/0b/América_TV_logo_2022.svg" group-title="Argentina",América TV Alternativo 2
